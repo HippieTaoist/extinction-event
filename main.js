@@ -1,9 +1,9 @@
-let dinoCrossLi = document.querySelectorAll('ol li')
-console.log(dinoCrossLi)
+let dinoCrossOlLi = document.querySelectorAll('ol li')
+console.log(dinoCrossOlLi)
     // document.createElement()
 
-
-dinoCrossLi.forEach(liItem => {
+// adds the class 'clicked and strikes the text
+dinoCrossOlLi.forEach(liItem => {
     liItem.addEventListener('click', function() {
         liItem.className = 'clicked';
         liItem.style.textDecoration = 'line-through';
@@ -11,8 +11,19 @@ dinoCrossLi.forEach(liItem => {
     })
 });
 
-strikeMe = document.getElementsByClassName('clicked')
-strikeMe.style.textDecoration = 'line-through'
+let dinoCrossUlLi = document.querySelectorAll('ul li')
+console.log(dinoCrossUlLi)
+    // document.createElement()
+
+// adds the class 'clicked and strikes the text
+dinoCrossUlLi.forEach(liItem => {
+    liItem.addEventListener('click', function() {
+        liItem.className = 'clicked';
+        liItem.style.opacity = '0%';
+
+    })
+});
+
 
 
 // hen an item is clicked...
